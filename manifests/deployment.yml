@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: sagargoudnewaksmy 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sagargoudnewaksmy
+  template:
+    metadata:
+      labels:
+        app: sagargoudnewaksmy 
+    spec:
+      containers:
+        - name: sagargoudnewaksmy 
+          image: aksacrsg.azurecr.io/sagargoudnewaksmy
+          ports:
+          - containerPort: 80
