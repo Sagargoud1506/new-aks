@@ -19,8 +19,8 @@ stages:
     steps:
     - task: Docker@2
       inputs:
-        containerRegistry: 'aksacrsg'
-        repository: 'sagargoudnewaksmy'
+        containerRegistry: 'mynameissagar'
+        repository: 'mynameisgagar'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
         tags: |
