@@ -19,7 +19,7 @@ stages:
     steps:
     - task: Docker@2
       inputs:
-        containerRegistry: 'manual-aksdevopsacr-svc'
+        containerRegistry: 'aksacrsg'
         repository: 'sagargoudnewaksmy'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
