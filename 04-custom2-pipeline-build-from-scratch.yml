@@ -20,7 +20,7 @@ stages:
     - task: Docker@2
       inputs:
         containerRegistry: 'manual-aksdevopsacr-svc'
-        repository: 'newstaterterpipe'
+        repository: 'sagargoudnewaksmy'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
         tags: |
